@@ -3,6 +3,7 @@ public class Participant {
 	
 	protected String name;
 	protected int year;
+	protected int payment;
 	protected String city;
 	protected String country;
 	
@@ -20,9 +21,17 @@ public class Participant {
 	public Participant(String name, int y) {
 		this.name = name;
 		year = y;
+	}
+	
+	//payment constructor
+	public Participant(String name, int y, int pay) {
+		this.name = name;
+		year = y;
+		payment = pay;
 		participantCount++;	
 	}
-
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -62,6 +71,11 @@ public class Participant {
 	public static void setParticipantCount(int participantCount) {
 		Participant.participantCount = participantCount;
 	}
+	
+	public void printInfo() {
+		
+	}
+	
 	
 	
 	
