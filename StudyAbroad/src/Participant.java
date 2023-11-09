@@ -17,9 +17,62 @@ public class Participant {
 	}
 	
 	//intialize constructor
-	public Participant(String name, int year, String city, String country) {
-		
+	public Participant(String name, int y) {
+		this.name = name;
+		year = y;
+		participantCount++;	
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public static int getParticipantCount() {
+		return participantCount;
+	}
+
+	public static void setParticipantCount(int participantCount) {
+		Participant.participantCount = participantCount;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }
