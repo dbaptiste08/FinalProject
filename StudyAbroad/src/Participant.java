@@ -18,16 +18,20 @@ public class Participant {
 	}
 	
 	//intialize constructor
-	public Participant(String name, int y) {
+	public Participant(String name, int y, String town, String ctry) {
 		this.name = name;
 		year = y;
+		city = town;
+		country = ctry;
 	}
 	
 	//payment constructor
-	public Participant(String name, int y, int pay) {
+	public Participant(String name, int y, int pay, String town, String ctry) {
 		this.name = name;
 		year = y;
 		payment = pay;
+		city = town;
+		country = ctry;
 		participantCount++;	
 	}
 	
@@ -73,7 +77,11 @@ public class Participant {
 	}
 	
 	public void printInfo() {
-		
+		System.out.println("Thank you for your interest in study abroad!");
+		System.out.println("Name: " + name);
+		System.out.println("Year: " + year);
+		System.out.println("City: " + city);
+		System.out.println("Country: " + country);
 	}
 	
 	
