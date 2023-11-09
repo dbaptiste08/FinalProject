@@ -8,6 +8,18 @@ public class Participant {
 	
 	private static int participantCount = 0;
 	
-	//default constru
+	//default constructor
+	public Participant () {
+		name = "TBD";
+		year = 0;
+		city = "TBD";
+		country = "TBD";
+	}
+	
+	//intialize constructor
+	public Participant(String name, int year, String city, String country) {
+		
+	}
+	
 
 }
