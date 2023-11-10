@@ -11,6 +11,20 @@ public class FacultyLead {
 		this.countryLocation = countryLocation;
 		this.subjectTaught = subjectTaught;
 		this.nameList = new HashSet <>();
+	}
+	
+		public String getCountryLocation() {
+			return countryLocation;
+		}
+		public String getsubjectTaught() {
+			return subjectTaught;
+		}
+		public void addToNameList(String studentName) {
+			nameList.add(studentName);
+		}
+	
+		
+		
 		
 		
 	}
@@ -18,4 +32,4 @@ public class FacultyLead {
 	
 	
 
-}
+
