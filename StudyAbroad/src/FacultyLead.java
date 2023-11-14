@@ -26,7 +26,7 @@ public class FacultyLead extends Participant {
 			System.out.println("Faculty Name: " + name);
 			System.out.println("Country Location: " + countryLocation);
 			System.out.println("Subject Taught: " + subjectTaught);
-			System.out.println("Student Name: " + nameList);
+			System.out.println("Student Names: " + nameList);
 		}
 	}
 	
