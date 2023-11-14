@@ -3,10 +3,9 @@ public class Participant {
 	
 	protected String name;
 	protected int year;
-	protected int payment;
 	protected String country;
 	
-	private static int participantCount = 0;
+	
 	
 	//default constructor
 	public Participant () {
@@ -19,15 +18,6 @@ public class Participant {
 	public Participant(String name, String ctry) {
 		this.name = name;
 		country = ctry;
-	}
-	
-	//payment constructor
-	public Participant(String name, int y, int pay, String ctry) {
-		this.name = name;
-		year = y;
-		payment = pay;
-		country = ctry;
-		participantCount++;	
 	}
 	
 	
@@ -56,13 +46,7 @@ public class Participant {
 		this.country = country;
 	}
 
-	public static int getParticipantCount() {
-		return participantCount;
-	}
-
-	public static void setParticipantCount(int participantCount) {
-		Participant.participantCount = participantCount;
-	}
+	
 	
 	public void printInfo() {
 		System.out.println("Thank you for your interest in study abroad!");
