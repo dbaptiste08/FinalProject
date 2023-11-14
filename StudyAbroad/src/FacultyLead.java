@@ -22,13 +22,12 @@ public class FacultyLead extends Participant {
 		public void addToNameList(String studentName) {
 			nameList.add(studentName);
 		}
-		//line
-		
-	
-		
-		
-		
-		
+		public void print() {
+			System.out.println("Faculty Name: " + name);
+			System.out.println("Country Location: " + countryLocation);
+			System.out.println("Subject Taught: " + subjectTaught);
+			System.out.println("Student Name: " + nameList);
+		}
 	}
 	
 	
