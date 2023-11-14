@@ -1,5 +1,5 @@
 import java.util.HashSet;
-public class FacultyLead {
+public class FacultyLead extends Participant {
 	
 	private String name;
 	private String countryLocation;
