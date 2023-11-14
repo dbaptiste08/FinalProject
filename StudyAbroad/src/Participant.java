@@ -82,6 +82,7 @@ public class Participant {
 		System.out.println("Year: " + year);
 		System.out.println("City: " + city);
 		System.out.println("Country: " + country);
+		System.out.println("Random");
 	}
 	
 	
