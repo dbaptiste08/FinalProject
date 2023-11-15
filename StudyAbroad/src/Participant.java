@@ -16,14 +16,14 @@ public class Participant {
 	}
 	
 	//intialize constructor
-	public Participant(String name, String ctry) {
+	public Participant(String name, String countryLocation) {
 		this.name = name;
-		country = ctry;
+		country = countryLocation;
 	}
 	
-	public Participant (String name, String ctry, int y, String sem) {
+	public Participant (String name, String countryLocation, int y, String sem) {
 		this.name=name;
-		country = ctry;
+		country = countryLocation;
 		year = y;
 		semester = sem;
 	}
@@ -50,18 +50,20 @@ public class Participant {
 		return country;
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public void setCountry(String countryLocation) {
+		this.country = countryLocation;
 	}
 
 	
 	
 	public void printInfo() {
+		System.out.println("*********************************************");
 		System.out.println("Thank you for your interest in study abroad!");
 		System.out.println("Name: " + name);
 		System.out.println("Year: " + year);
 		System.out.println("Country: " + country);
 		System.out.println("Semester: " + semester);
+		System.out.println("*********************************************");
 
 	}
 	
