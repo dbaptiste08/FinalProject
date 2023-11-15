@@ -30,10 +30,12 @@ public class FacultyLead extends Participant {
 		}
 	
 		public void print() {
+			System.out.println("***************************************");
 			System.out.println("Faculty Name: " + name);
 			System.out.println("Country Location: " + countryLocation);
 			System.out.println("Subject Taught: " + subjectTaught);
 			System.out.println("Student Names: " + nameList);
+			System.out.println("***************************************");
 		}
 
 		
