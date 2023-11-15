@@ -17,9 +17,9 @@ public HashMap<String,Participant> participantList(){
 }
 
 //add participants - participant list
-public void addParticpant(String name, String ctry)
+public void addParticpant(String name, String countryLocation)
 {	
-	Participant newParticipant = new Participant(name, ctry);
+	Participant newParticipant = new Participant(name, countryLocation);
 	participantList.put(newParticipant.getName(), newParticipant);
 }
 
@@ -52,10 +52,11 @@ public void printCountries() {
 }
 
 public void printLength() {
+	System.out.println("***************");
 	String [] programLength = {"Maymester", "Fall", "Spring"};
-	
 	for (String semester: programLength) {
 		System.out.println(semester);
+	System.out.println("***************");
 	
 	}
 }
