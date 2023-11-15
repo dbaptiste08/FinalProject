@@ -48,9 +48,7 @@ public void printCountries() {
 	countries.add("Greece");
 	countries.add("Germany");
 	countries.add("Spain");
-	
-	System.out.println("Hi");
-	
+		
 }
 
 public void printLength() {
