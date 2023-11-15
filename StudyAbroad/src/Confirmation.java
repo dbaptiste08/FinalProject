@@ -3,7 +3,6 @@ public class Confirmation {
 	protected String name;
 	protected int payment;
 	
-	private static int participantCount = 0;
 	
 	//default
 	public Confirmation () {
@@ -34,12 +33,10 @@ public class Confirmation {
 		this.payment = payment;
 	}
 
-	public static int getParticipantCount() {
-		return participantCount;
-	}
-
-	public static void setParticipantCount(int participantCount) {
-		Confirmation.participantCount = participantCount;
+	
+	public void printFinal() {
+		System.out.println("You officially have a spot for the study aborad program!");
+		System.out.println("We are so excited to have you!");
 	}
 		
 
