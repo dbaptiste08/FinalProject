@@ -10,6 +10,8 @@ public class Tester {
 		Confirmation KellyPayment = new Confirmation("Kelly", 500);
 		KellyPayment.printFinal();
 		
+		
+		
 		StudyAbroad info = new StudyAbroad();
 		info.printCountries();
 		info.printLength();
