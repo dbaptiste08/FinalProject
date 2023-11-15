@@ -53,6 +53,15 @@ public void printCountries() {
 	
 }
 
+public void printLength() {
+	String [] programLength = {"Maymester", "Fall", "Spring"};
+	
+	for (String semester: programLength) {
+		System.out.println(semester);
+	
+	}
+}
+
 
 
 }
