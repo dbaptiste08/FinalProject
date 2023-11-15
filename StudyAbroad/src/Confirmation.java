@@ -30,7 +30,13 @@ public class Confirmation {
 	}
 
 	public void setPayment(int payment) {
+	 if (payment < 500) {
 		this.payment = payment;
+	 }
+	 else {
+		 System.out.println("Error");
+	 }
+		
 	}
 
 	
