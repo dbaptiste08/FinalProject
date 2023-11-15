@@ -6,6 +6,12 @@ public class FacultyLead extends Participant {
 	private String subjectTaught;
 	private HashSet <String> nameList;
 	
+	//constructor
+	public FacultyLead() {
+		super();
+		subjectTaught = "TBD";
+	}
+	
 	public void Faculty(String name, String countryLocation, String subjectTaught) {
 		this.name = name;
 		this.countryLocation = countryLocation;
@@ -22,6 +28,7 @@ public class FacultyLead extends Participant {
 		public void addToNameList(String studentName) {
 			nameList.add(studentName);
 		}
+	
 		public void print() {
 			System.out.println("Faculty Name: " + name);
 			System.out.println("Country Location: " + countryLocation);
