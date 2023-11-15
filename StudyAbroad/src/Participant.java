@@ -4,6 +4,7 @@ public class Participant {
 	protected String name;
 	protected int year;
 	protected String country;
+	protected String semester;
 	
 	
 	
@@ -18,6 +19,13 @@ public class Participant {
 	public Participant(String name, String ctry) {
 		this.name = name;
 		country = ctry;
+	}
+	
+	public Participant (String name, String ctry, int y, String sem) {
+		this.name=name;
+		country = ctry;
+		year = y;
+		semester = sem;
 	}
 	
 	
@@ -53,6 +61,7 @@ public class Participant {
 		System.out.println("Name: " + name);
 		System.out.println("Year: " + year);
 		System.out.println("Country: " + country);
+		System.out.println("Semester: " + semester);
 
 	}
 	
