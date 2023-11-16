@@ -44,6 +44,14 @@ public void addFacultyLead(String name, String countryLocation) {
 }
 
 
+public void printLength() {
+	System.out.println("Here are the terms you can sign up for!");
+	for (String semester: programLength) {
+		System.out.println(semester);	
+	}
+	System.out.println("***********************************************");
+}
+
 public void printCountries() {
 	System.out.println("Here are the countries you can study at!");
 	countries.add("France");
@@ -53,14 +61,6 @@ public void printCountries() {
 	countries.add("Spain");
 	System.out.println(countries);
 		
-}
-
-public void printLength() {
-	System.out.println("Here are the terms you can sign up for!");
-	for (String semester: programLength) {
-		System.out.println(semester);	
-	}
-	System.out.println("***********************************************");
 }
 
   
