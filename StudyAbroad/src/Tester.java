@@ -10,6 +10,9 @@ public class Tester {
 		welcome.printLength();
 		welcome.printPrompt();
 		
+		Participant prompt = new Participant();
+		prompt.getUserInput();
+		
 		//First example - first scenario
 		Participant Kelly = new Participant("Kelly", "France", 248, "Maymester");
 		StudyAbroad KellyList = new StudyAbroad();
@@ -27,6 +30,8 @@ public class Tester {
 		faculty1.print();
 		
 		//second example - first scenario
+		Participant prompt2 = new Participant();
+		prompt2.getUserInput();
 		Participant Sophia = new Participant("Sophia", "Italy", 799, "Spring");
 		Sophia.printInfo();
 		
@@ -41,6 +46,8 @@ public class Tester {
 		faculty.print();
 		
 		//error example
+		Participant prompt3 = new Participant();
+		prompt3.getUserInput();
 		Participant Danielle = new Participant("Danielle", "Italy", 345, "Spring");
 	    StudyAbroad DanielleList = new StudyAbroad();
 		DanielleList.addParticpant("Danielle", "Italy", 345);
@@ -49,6 +56,8 @@ public class Tester {
 	    
 	    Confirmation DaniellePayment = new Confirmation("Danielle", 300, 345);
 		DaniellePayment.printFinal();
+		
+		
 	    				
 		
 		
