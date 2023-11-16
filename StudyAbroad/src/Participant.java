@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Participant {
 	
@@ -5,6 +7,7 @@ public class Participant {
 	protected int id;
 	protected String country;
 	protected String semester;
+	
 	
 	
 	
@@ -56,6 +59,40 @@ public class Participant {
 
 	
 	//prompt user
+	public void getUserInput() {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+        name = keyboard.nextLine();
+
+        System.out.println("Enter your ID:");
+        id = keyboard.nextInt();
+        keyboard.nextLine(); 
+
+        System.out.println("Enter your country:");
+        System.out.println("Countries to choose from: ");
+        System.out.println("France");
+        System.out.println("Italy");
+        System.out.println("Greece");
+        System.out.println("Spain");
+
+        boolean validCountry = false;
+        while (!validCountry) {
+            String inputCountry = keyboard.nextLine();
+            if (inputCountry.equalsIgnoreCase("France") || inputCountry.equalsIgnoreCase("Italy") ||
+                    inputCountry.equalsIgnoreCase("Greece") || inputCountry.equalsIgnoreCase("Spain")) {
+                country = inputCountry;
+                validCountry = true;
+            } else {
+                System.out.println("Error: Please enter a valid country (France, Italy, Greece, or Spain):");
+            }
+        }
+    }
+     
+	
+	
+
+	
 	
 	
 	public void printInfo() {
