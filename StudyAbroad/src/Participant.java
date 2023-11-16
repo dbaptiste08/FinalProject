@@ -102,6 +102,7 @@ public class Participant {
 		System.out.println("Id: " + id);
 		System.out.println("Country: " + country);
 		System.out.println("Semester: " + semester);
+		System.out.println("Your profile has been created!");
 		System.out.println("***************************************************************************************************************");
 
 	}
