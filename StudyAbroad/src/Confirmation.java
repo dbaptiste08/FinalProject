@@ -71,7 +71,6 @@ public class Confirmation {
 	    }
 	
 	
-	
 	public void printFinal() {
         System.out.println("You have officially signed up! We are so excited to have you!");      
         System.out.println("***************************************************************************************************************");
