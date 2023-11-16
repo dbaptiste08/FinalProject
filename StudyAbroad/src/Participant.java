@@ -2,7 +2,7 @@
 public class Participant {
 	
 	protected String name;
-	protected int year;
+	protected int id;
 	protected String country;
 	protected String semester;
 	
@@ -11,7 +11,7 @@ public class Participant {
 	//default constructor
 	public Participant () {
 		name = "TBD";
-		year = 0;
+		id = 0;
 		country = "TBD";
 	}
 	
@@ -21,10 +21,10 @@ public class Participant {
 		country = countryLocation;
 	}
 	
-	public Participant (String name, String countryLocation, int y, String sem) {
+	public Participant (String name, String countryLocation, int dent, String sem) {
 		this.name=name;
 		country = countryLocation;
-		year = y;
+		id = dent;
 		semester = sem;
 	}
 	
@@ -37,12 +37,12 @@ public class Participant {
 		this.name = name;
 	}
 
-	public int getYear() {
-		return year;
+	public int getId() {
+		return id;
 	}
 
-	public void setYear(int year) {
-		this.year = year;
+	public void setId(int dent) {
+		this.id = dent;
 	}
 
 
@@ -57,13 +57,13 @@ public class Participant {
 	
 	
 	public void printInfo() {
-		System.out.println("*********************************************");
+		//System.out.println("********************************************************");
 		System.out.println("Thank you for your interest in study abroad!");
 		System.out.println("Name: " + name);
-		System.out.println("Year: " + year);
+		System.out.println("Id: " + id);
 		System.out.println("Country: " + country);
 		System.out.println("Semester: " + semester);
-		System.out.println("*********************************************");
+		System.out.println("***************************************************************************************************************");
 
 	}
 	
