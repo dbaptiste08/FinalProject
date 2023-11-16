@@ -17,10 +17,17 @@ public HashMap<String,Participant> participantList(){
 }
 
 //add participants - participant list
-public void addParticpant(String name, String countryLocation)
-{	
-	Participant newParticipant = new Participant(name, countryLocation);
-	participantList.put(newParticipant.getName(), newParticipant);
+public void addParticipant(String name, String countryLocation, int id) {
+    for (Participant participant : participantList.values()) {
+        if (participant.getName().equals(name) && participant.getCountry().equals(countryLocation)
+                && participant.getId() == id) {
+            System.out.println("Error: You have already signed up for this program.");
+            
+        } else {
+        	 Participant newParticipant = new Participant(name, countryLocation);
+        	    participantList.put(newParticipant.getName(), newParticipant);
+        }
+    }   
 }
 
 //add confirmation - confirmation list
@@ -69,6 +76,26 @@ public void printWelcomeStatement() {
 
 public void printPrompt() {
 	System.out.println("Please write your name, country, year, identification number, and semester");
+}
+
+public void printParticipantList() {
+    System.out.println("Participants:");
+    for (HashMap.Entry<String, Participant> entry : participantList.entrySet()) {
+        String name = entry.getKey();
+        Participant participant = entry.getValue();
+        System.out.println("Name: " + name + ", Country: " + participant.getCountry());
+        // You can add more details based on your Participant class structure
+    }
+}
+
+public void printConfirmationList() {
+    System.out.println("Confirmations:");
+    for (HashMap.Entry<String, Confirmation> entry : confirmationList.entrySet()) {
+        String name = entry.getKey();
+        Confirmation confirmation = entry.getValue();
+        System.out.println("Name: " + name + ", Payment: " + confirmation.getPayment());
+
+    }
 }
 
 
