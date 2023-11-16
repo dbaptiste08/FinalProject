@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Confirmation {
 	protected String name;
@@ -50,14 +51,29 @@ public class Confirmation {
 	 		
 	}
 
+	 public void getUserInput() {
+	        Scanner keyboard = new Scanner(System.in);
+
+	        System.out.println("Enter your name:");
+	        name = keyboard.nextLine();
+
+	        System.out.println("Enter your ID:");
+	        id = keyboard.nextInt();
+	        keyboard.nextLine(); 
+
+	        System.out.println("Enter your payment amount:");
+	        int paymentAmount = keyboard.nextInt();
+	        
+	        if (paymentAmount < 500) {
+	            System.out.println("Error: Payment amount must be 500 or more.");
+	            // You might want to handle this situation accordingly (e.g., ask for input again).
+	        }
+	    }
+	
+	
 	
 	public void printFinal() {
-        System.out.println("You officially have a spot for the study abroad program!");
-        if (payment < 500) {
-            System.out.println("Error: Payment must be at least 500 for confirmation. You are not signed up for the study abroad program.");
-        } else {
-            System.out.println("You have officially signed up! We are so excited to have you!");
-        }
+        System.out.println("You have officially signed up! We are so excited to have you!");      
         System.out.println("***************************************************************************************************************");
 	}		
 
