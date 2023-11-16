@@ -2,6 +2,7 @@
 public class Confirmation {
 	protected String name;
 	protected int payment;
+	protected int id;
 	
 	
 	//default
@@ -11,10 +12,25 @@ public class Confirmation {
 	}
 	
 	//intialize constructor
-	public Confirmation(String name, int pay) {
+	public Confirmation(String name, int pay, int dent) {
 		this.name = name;
 		payment = pay;
+		id = dent;
 		
+	}
+	
+	//overload
+	public Confirmation (String name, int pay) {
+		this.name = name;
+		payment = pay;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -36,14 +52,13 @@ public class Confirmation {
 
 	
 	public void printFinal() {
-        System.out.println("********************************************************");
         System.out.println("You officially have a spot for the study abroad program!");
         if (payment < 500) {
             System.out.println("Error: Payment must be at least 500 for confirmation. You are not signed up for the study abroad program.");
         } else {
             System.out.println("You have officially signed up! We are so excited to have you!");
         }
-        System.out.println("********************************************************");
+        System.out.println("***************************************************************************************************************");
 	}		
 
 }
