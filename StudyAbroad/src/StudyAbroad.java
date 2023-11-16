@@ -42,24 +42,36 @@ public void addFacultyLead(String name, String countryLocation) {
 
 
 public void printCountries() {
+	System.out.println("Here are the countries you can study at!");
 	ArrayList<String> countries = new ArrayList<String>();
 	countries.add("France");
 	countries.add("Italy");
 	countries.add("Greece");
 	countries.add("Germany");
 	countries.add("Spain");
+	System.out.println(countries);
 		
 }
 
 public void printLength() {
-	System.out.println("***************");
+	System.out.println("Here are the terms you can sign up for!");
 	String [] programLength = {"Maymester", "Fall", "Spring"};
 	for (String semester: programLength) {
-		System.out.println(semester);
-	System.out.println("***************");
-	
+		System.out.println(semester);	
 	}
+	System.out.println("***********************************************");
 }
+
+  
+public void printWelcomeStatement() {
+	System.out.println("Welcome to Study Abroad!");	
+}
+
+public void printPrompt() {
+	System.out.println("Please write your name, country, year, identification number, and semester");
+}
+
+
 
 
 
