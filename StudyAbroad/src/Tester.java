@@ -15,23 +15,34 @@ public class Tester {
 		StudyAbroad prompt = new StudyAbroad();
 		prompt.printPrompt();
 		
-		//First example
+		//First example - first scenario
 		Participant Kelly = new Participant("Kelly", "France", 248, "Maymester");
+		StudyAbroad KellyList = new StudyAbroad();
+		KellyList.addParticipant("Kelly", "France", 248);
 		Kelly.printInfo();
 		
+		//First example - second scenario
 		Confirmation KellyPayment = new Confirmation("Kelly", 500, 248);
 		KellyPayment.printFinal();
 		
-		//second example
+		//second example - first scenario
 		Participant Sophia = new Participant("Sophia", "Italy", 799, "Spring");
 		Sophia.printInfo();
 		
+		//second example - second scenario
 		Confirmation SophiaPayment = new Confirmation("Sophia", 500, 799);
 		SophiaPayment.printFinal();
 		
 		//error example
 		Participant Danielle = new Participant("Danielle", "Italy", 345, "Spring");
-	    Danielle.printInfo();
+	    StudyAbroad DanielleList = new StudyAbroad();
+		DanielleList.addParticipant("Danielle", "Italy", 345);
+		 Danielle.printInfo();
+		
+		Participant Dani = new Participant("Danielle", "Italy", 345, "Spring");
+	    StudyAbroad DaniList = new StudyAbroad();
+	    DaniList.addParticipant("Danielle", "Italy", 345);
+	    Dani.printInfo();
 	    
 	    Confirmation DaniellePayment = new Confirmation("Danielle", 300, 345);
 		DaniellePayment.printFinal();
@@ -48,6 +59,16 @@ public class Tester {
 		faculty.addToNameList("Sophia");
 		faculty.print();
 		
+		
+		//participantlist
+		/*StudyAbroad checkPlist = new StudyAbroad();
+		checkPlist.printParticipantList();
+		
+		
+		//confirmationlist
+		StudyAbroad checkClist = new StudyAbroad();
+		checkClist.printConfirmationList();
+		*/
 	}
 
 }
