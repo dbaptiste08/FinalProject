@@ -55,6 +55,8 @@ public class Participant {
 	}
 
 	
+	//prompt user
+	
 	
 	public void printInfo() {
 		//System.out.println("********************************************************");
