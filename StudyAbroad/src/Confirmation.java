@@ -67,13 +67,11 @@ public class Confirmation {
 	        if (paymentAmount < 500) {
 	            System.out.println("Error: Payment amount must be 500 or more.");
 	            // You might want to handle this situation accordingly (e.g., ask for input again).
+	        } else {
+	        	System.out.println("You have officially signed up! We are so excited to have you!");      
+	            System.out.println("****************************************************************************");
+	        	
 	        }
 	    }
 	
-	
-	public void printFinal() {
-        System.out.println("You have officially signed up! We are so excited to have you!");      
-        System.out.println("***************************************************************************************************************");
-	}		
-
 }
