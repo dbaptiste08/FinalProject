@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Scanner;
 public class FacultyLead extends Participant {
 	
 	private String name;
@@ -25,9 +26,13 @@ public class FacultyLead extends Participant {
 		public String getsubjectTaught() {
 			return subjectTaught;
 		}
-		public void addToNameList(String studentName) {
-			nameList.add(studentName);
+		public void addToNameList() {
+			 Scanner keyboard = new Scanner(System.in);
+		     System.out.print("Enter student name " );
+		     String studentName = keyboard.nextLine();
+		     nameList.add(studentName);
 		}
+		
 	
 		public void print() {
 		//	System.out.println("***************************************");
@@ -35,7 +40,7 @@ public class FacultyLead extends Participant {
 			System.out.println("Country Location: " + countryLocation);
 			System.out.println("Subject Taught: " + subjectTaught);
 			System.out.println("Student Names: " + nameList);
-			System.out.println("***************************************");
+			System.out.println("****************************************************************************");
 		}
        
 		
