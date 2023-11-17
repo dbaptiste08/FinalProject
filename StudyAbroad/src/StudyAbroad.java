@@ -8,7 +8,7 @@ private HashMap <String, Confirmation> confirmationList;
 String [] programLength = {"Maymester", "Fall", "Spring"};
 ArrayList<String> countries = new ArrayList<String>();
 
-public StudyAbroad() { //default constructor
+public StudyAbroad() { 
 	participantList = new HashMap<String, Participant>();
 	confirmationList = new HashMap<String, Confirmation>();
 		
@@ -20,11 +20,27 @@ public HashMap<String,Participant> participantList(){
 }
 
 //add participants - participant list
+public void addParticipant()
+{
+	Participant newParticipant = new Participant();
+	participantList.put(newParticipant.getName(), newParticipant);
+}
+
+
+
+
 public void addParticpant(String name, String countryLocation, int id)
 {	
 	Participant newParticipant = new Participant(name, countryLocation);
 	participantList.put(newParticipant.getName(), newParticipant);
 }
+
+//default
+public void addConfirmation() {
+	Confirmation newConfirmation = new Confirmation();
+	confirmationList.put(newConfirmation.getName(), newConfirmation);	
+}
+
 
 //add confirmation - confirmation list
 public void addConfirmation(String name, String countryLocation, int id) {
