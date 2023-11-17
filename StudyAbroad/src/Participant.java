@@ -87,6 +87,9 @@ public class Participant {
                 System.out.println("Error: Please enter a valid country (France, Italy, Greece, or Spain):");
             }
         }
+        
+        System.out.println("Enter the semester:");
+        semester = keyboard.nextLine();
     }
      
 	
