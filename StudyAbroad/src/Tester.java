@@ -10,55 +10,53 @@ public class Tester {
 		welcome.printLength();
 		welcome.printPrompt();
 		
-		Participant prompt = new Participant();
-		prompt.getUserInput();
-		
 		//First example - first scenario
-		Participant Kelly = new Participant("Kelly", "France", 248, "Maymester");
-		StudyAbroad KellyList = new StudyAbroad();
-		KellyList.addParticpant("Kelly", "France", 248);
-		Kelly.printInfo();
+		Participant part1 = new Participant();
+		part1.getUserInput();
+		part1.printInfo();
+		
+	    StudyAbroad part1List = new StudyAbroad();
+	    part1List.addParticipant();
+	    
+	
+	
 		
 		//First example - second scenario
-		Confirmation KellyPayment = new Confirmation("Kelly", 500, 248);
-		KellyList.addConfirmation("Kelly", "France", 248);
-		KellyPayment.printFinal();
+		Confirmation partI = new Confirmation();
+		partI.getUserInput();
+		
+		StudyAbroad partIList = new StudyAbroad();
+		partIList.addConfirmation();
+		
+	
 		
 		FacultyLead faculty1 = new FacultyLead();
-		faculty1.Faculty("Claire Fraiser", "France", "History");
-		faculty1.addToNameList("Kelly");
+		faculty1.Faculty("Claire Fraser", "France", "History");
+		faculty1.addToNameList();
 		faculty1.print();
 		
-		//second example - first scenario
-		Participant prompt2 = new Participant();
-		prompt2.getUserInput();
-		Participant Sophia = new Participant("Sophia", "Italy", 799, "Spring");
-		Sophia.printInfo();
-		
-		//second example - second scenario
-		Confirmation SophiaPayment = new Confirmation("Sophia", 500, 799);
-		KellyList.addConfirmation("Sophia", "Italy", 799);
-		SophiaPayment.printFinal();
-		
-		FacultyLead faculty = new FacultyLead();
-		faculty.Faculty("Karen Aguar", "Italy", "MIS");
-		faculty.addToNameList("Sophia");
-		faculty.print();
+	
 		
 		//error example
-		Participant prompt3 = new Participant();
-		prompt3.getUserInput();
-		Participant Danielle = new Participant("Danielle", "Italy", 345, "Spring");
-	    StudyAbroad DanielleList = new StudyAbroad();
-		DanielleList.addParticpant("Danielle", "Italy", 345);
-		Danielle.printInfo();
+		Participant promptII = new Participant();
+		promptII.getUserInput();
+		promptII.printInfo();
 		
-	    
-	    Confirmation DaniellePayment = new Confirmation("Danielle", 300, 345);
-		DaniellePayment.printFinal();
+		StudyAbroad part3List = new StudyAbroad();
+		part3List.addParticipant();
 		
+	   
+		//error second scenario	
+		Confirmation partII = new Confirmation();
+		partII.getUserInput();
 		
-	    				
+		StudyAbroad partIIList = new StudyAbroad();
+		partIIList.addConfirmation();
+		
+		FacultyLead facultyII = new FacultyLead();
+		facultyII.Faculty("Olivia Benson", "Italy", "Math");
+		facultyII.addToNameList();
+		facultyII.print();
 		
 		
 	}
